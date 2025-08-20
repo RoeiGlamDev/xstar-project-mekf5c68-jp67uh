@@ -1,0 +1,25 @@
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif; /*  Elegant font */
+    background-color: #fff; /*  White background */
+    color: #333; /*  Dark text for contrast */
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #d5006d; /*  Pink color for headings */
+    font-weight: bold; /*  Bold for emphasis */
+  }
+
+  a {
+    color: #d5006d; /*  Pink for links */
+    text-decoration: none; /*  No underline */
+    &:hover {
+      text-decoration: underline; /*  Underline on hover */
+    }
+  }
+
+  button {
+    background-color: #d5006d; /*  Pink button */
